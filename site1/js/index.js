@@ -5,7 +5,8 @@ const para1 = document.querySelector('.para1');
 const para2 = document.querySelector('.para2');
 const para3 = document.querySelector('.para3');
 const paras = document.querySelectorAll('.para');
-console.log(paras)
+
+// ANIMATION FUNCTION
 
 let animDel = 0.1;
 function addAnimation(el){
@@ -21,14 +22,14 @@ function addAnimation(el){
 
 paras.forEach((element) => {
     addAnimation(element);
-})
+});
 
 (function(){
     navigation.style.overflowY = "hidden";
     navigationContent.style.transform = "translateY(5rem)";
     navigationContent.style.transition = "all 0.4s ease";
 
-})()
+})();
 
 function revealAfter2Sec(){
     const styledElement = navigation.style;
@@ -44,10 +45,10 @@ revealAfter2Sec();
 
 function animateHeadings(){
     setTimeout(() => {
-        para2.forEach((el) => {
+        paras.forEach((el) => {
             const element = el.children;
             for(let i = 0 ;i < element.length; i++){
-                element[i].style.opacity = 1;
+                element[i].style.opacity = '1';
                 element[i].style.transform = "translateY(0rem)";
             }
         })

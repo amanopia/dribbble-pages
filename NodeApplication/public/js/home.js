@@ -3,10 +3,12 @@
 // const headerChildren = headerContent.children;
 // headerChildren[0].classList.add('btn-active');
 
-
 const dropdown = document.querySelector('.header-content');
-
 const toggleDot = document.querySelector('.toggle-dot');
+console.log(document.querySelectorAll('.toggle-dot'))
+
+const head = document.querySelector('.headding');
+
 toggleDot.addEventListener('click', () => {
     dropdown.classList.toggle('hidden');
     dropdown.children[0].classList.remove('btn-active');
@@ -15,6 +17,6 @@ toggleDot.addEventListener('click', () => {
 })
 
 anime({
-    targets: '.toggle-dot',
-    translateX: 250
-})
+  targets: '.title',
+  translateX: 250
+});

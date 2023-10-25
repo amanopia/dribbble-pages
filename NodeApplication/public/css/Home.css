@@ -1,0 +1,124 @@
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    color: var(--color-primary);   
+    position: relative;
+}
+
+nav h1 {
+    font-family: "Akshar";
+    font-weight: 500;
+    
+}
+a {
+    color: inherit
+}
+
+
+li[class="btn-active"] {
+    text-decoration: none;
+    background: none;
+    border: none;
+    color: var(--color-secondary);
+    background: var(--color-primary);
+    padding: 1.5rem 2.5rem;
+    border-radius: var(--border-radius-main);
+    transition: all 0.4s ease;
+}
+
+li[class="btn-active"]:hover {
+    background: #a631ff;
+    color: #fff;
+    cursor: pointer;
+    transform: translateY(-5px);
+} 
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3.4rem;
+    transition: all 0.4s ease;
+    font-size: 0.8rem;
+    font-family: var(--font-content);
+    transform-origin: top right;
+}
+
+.toggle-dot {
+    cursor: pointer;
+    background: #ec0000;
+    height: 1.5em;
+    width: 1.5em;
+    border-radius: 50%;
+    z-index: 10;
+}
+@media screen and (max-width: 500px) {
+    /* .toggle-dot {
+        display: none;
+    } */
+
+    
+    .header-content  {
+
+        flex-direction: column;
+        background: #fff;
+        color: #000;
+        gap: 0.5rem;
+        padding: 1rem;
+        border-radius: 10px;
+
+        position: absolute;
+        z-index: 2;
+        right: 3rem;
+        top: 2.2rem;
+        transform: scale(1,1);
+        opacity: 1;
+    }
+
+    .hidden {
+        transform: scale(0,0);
+        opacity: 0;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    .toggle-dot {
+        display: none;
+    }
+}
+/* 
+@media screen and (max-width: ) {
+    .test-div {
+        width: 50px;
+        height: 6px;
+        background: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+        transition: all 0.5s ease-in-out;
+    }
+
+    .test-div::before, .test-div::after {
+        content: " ";
+        position: absolute;
+        background: #fff;
+        width: 50px;
+        height: 6px;
+       
+    }
+
+    .test-div::before {
+        transform: translateY(16px);
+    }
+
+    .test-div::after {
+        transform: translateY(-16px);
+    }
+
+} */
+
+/*  min-width >  */
+

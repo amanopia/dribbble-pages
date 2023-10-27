@@ -25,6 +25,7 @@ body {
     font-size: var(--base-font-size);
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
 }
 
 p {

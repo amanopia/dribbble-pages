@@ -1,5 +1,8 @@
 
 nav {
+    transition: all 0.4s ease;
+}
+nav .navigation-content{
 
     min-width: 80vw;
     margin: 0 auto;
@@ -8,7 +11,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     margin-top: 2rem;
-    position: relative
+    position: relative;
 
 }
 
@@ -137,47 +140,29 @@ li[class="btn-active"]:hover {
         transform: rotate(360deg)
     }
 }
-@media screen and (max-width: 500px) {
-    /* .toggle-dot {
-        display: none;
-    } */
-    .header-content  {
 
-        flex-direction: column;
-        background: #fff;
-        color: #000;
-        gap: 0.5rem;
-        padding: 1rem;
-        border-radius: 10px;
-
-        position: absolute;
-        z-index: 2;
-        right: 3rem;
-        top: 2.2rem;
-        transform: scale(1,1);
-        opacity: 1;
-    }
-
-}
-
-@media screen and (width > 500px) {
-}
 @media screen and (max-width: 1100px) {
 
     .header-content {
         flex-direction: column;
-        background: #fff;
+        gap: 0;
         color: #000;
-        gap: 0.5rem;
-        padding: 1rem;
-        border-radius: 10px;
-
         position: absolute;
         z-index: 3;
-        right: 3rem;
+        right: -12rem;
         top: 2.2rem;
-        transform: scale(1,1);
-        opacity: 1;
+    }
+
+    
+    ul.header-content li {
+        color: #000;
+        background-color: #fff;
+        padding: 0.5rem 1.2rem;
+        border-radius: 15px;
+        margin: 10px;
+        filter: drop-shadow(0 0 10px #000);
+        /* margin: 10px; */
+
     }
 
     .hidden {
@@ -325,47 +310,3 @@ li[class="btn-active"]:hover {
         font-size: 1.3em;
     }
 }
-
-.path {
-    stroke-dasharray: 1000;
-    stroke-dashoffset: 1000;
-    animation: dash 5s linear forwards;
-}
-
-@keyframes dash {
-    to {
-        stroke-dashoffset: 0;
-    }
-}
-/* @media screen and  */
-/*
-@media screen and (max-width: ) {
-    .test-div {
-        width: 50px;
-        height: 6px;
-        background: #fff;
-        border-radius: 5px;
-        box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
-        transition: all 0.5s ease-in-out;
-    }
-
-    .test-div::before, .test-div::after {
-        content: " ";
-        position: absolute;
-        background: #fff;
-        width: 50px;
-        height: 6px;
-       
-    }
-
-    .test-div::before {
-        transform: translateY(16px);
-    }
-
-    .test-div::after {
-        transform: translateY(-16px);
-    }
-
-} */
-
-/*  min-width >  */

@@ -8,14 +8,43 @@
     <link rel="stylesheet" href="./css/root-styles.css"/>
     <link rel="stylesheet" href="./css/Home.css"/>
 
+    {{!-- JAVASCRIPT --}}
     <script defer src="./js/anime.js"></script>
     <script defer src="./js/home.js"></script>
     <title>Document</title>
 </head>
 <body>
     {{>header}}
-    <h1 class="headding"> This is the index view</h1>
-    
 
+    <div class="hero-content">
+        <div class="row para1">
+            <span>Bounce</span>
+            <span>your</span>
+            <span>ideas</span>
+            <div class="img img-1"></div>
+        </div>
+        <div class="row para2">
+            <div class="img img-2"></div>
+            <span>Make</span>
+            <span>reality</span>
+            <span>and</span>
+        </div>
+        <div class="row para3">
+            <span>Boost</span>
+            <span>Your</span>
+            <span>Business</span>
+            <div><img class="star-img" src={{img}} alt="image"></div>
+        </div>
+        <div class="content-para">
+            <p class="ellipsis-text">Modern design is a dynamic and influential approach that emphasizes simplicity, functionality, and innovation. It prioritizes clean lines, minimalism, and the use of advanced materials and technologies. Modern design often focuses on open spaces and natural light, creating environments that are aesthetically pleasing and highly functional. </p>
+            <div>
+                <p>Digital Agency</p>
+                <p>Based in Bhopal, India</p>
+            </div>
+        </div>
+    </div>
+    
+    <!--?xml version="1.0" standalone="no"?-->              
+    
 </body>
 </html>

@@ -5,7 +5,7 @@
 
 const dropdown = document.querySelector('.header-content');
 const toggleDot = document.querySelector('.toggle-dot');
-console.log(document.querySelectorAll('.toggle-dot'))
+
 
 const head = document.querySelector('.headding');
 
@@ -15,8 +15,3 @@ toggleDot.addEventListener('click', () => {
     dropdown.classList.add('modified-styling');
 
 })
-
-anime({
-  targets: '.title',
-  translateX: 250
-});

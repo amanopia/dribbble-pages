@@ -24,7 +24,10 @@ hbs.registerPartials(path.join(__dirname, "../templates/partials"))
 
 //! ROUTES
 app.get('', (req, res)=>{
-    res.render('index');
+    res.render('index', {
+        img: "/assets/star.png",
+        alt : "img"
+    });
 })
 
 app.get('/about', (req, res) => {

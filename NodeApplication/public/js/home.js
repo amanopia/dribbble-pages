@@ -4,6 +4,8 @@ const liElements = document.querySelectorAll('.header-li-el');
 
 const head = document.querySelector('.headding');
 
+const timeOutMilliSeconds = 2000;
+
 let isAnimated = false;
 let animationObject = {
     targets: liElements,
@@ -64,7 +66,7 @@ function animateHeadings(){
                 element[i].style.transform = "translateY(0rem)";
             }
         })
-    }, 2000)
+    }, timeOutMilliSeconds)
 }
 function revealAfter2Sec(){
 
@@ -72,8 +74,78 @@ function revealAfter2Sec(){
         navigation.style.opacity = 1;
         navigationContent.style.transform = "translateY(0)";
         navigation.style.transform = "translateY(0)";
+        
 
-    }, 2000)
+    }, timeOutMilliSeconds)
 }
 revealAfter2Sec();
 animateHeadings();
+
+
+// // Content Para
+const contentPara = document.querySelector('.content-para');
+const ellipsisText = document.querySelector('.ellipsis-text');
+const secondDiv = contentPara.querySelector(':nth-child(2)');
+const paraTextContent = ellipsisText.textContent;
+const textContentArray = paraTextContent.split(' ');
+
+
+// function hideVisibility(){
+//     contentPara.style.opacity = 0;
+//     contentPara.style.transform = "translateY(2rem)";
+//     contentPara.style.transition = "all 0.4s ease";
+//     animationDelay += 0.1
+// }
+function hideTextContent(){
+    
+    ellipsisText.textContent = '';
+    textContentArray.forEach((element) => {
+        var span = document.createElement('span');
+        span.textContent = element + " ";
+        span.setAttribute('style', `transition: all 0.4s ease ${animationDelay}s; opacity: 0; transform: translateY(5rem);`);
+        span.setAttribute('class', 'para-text');
+        ellipsisText.appendChild(span);
+        animationDelay += 0.01;
+    })
+
+    // Styling the div
+    secondDiv.style.opacity = 0;
+    secondDiv.style.transform = 'translateY(1rem)';
+    secondDiv.style.transition = 'all 0.4s ease';
+    secondDiv.style.transitionDelay = animationDelay+"s";;
+    animationDelay+= 0.1;
+}
+hideTextContent();
+
+function revealParaElements(){
+    setTimeout(() => {
+        const paraTextElements = document.querySelectorAll('.para-text');
+        paraTextElements.forEach((element ) => {
+            element.style.opacity = 1;
+            element.style.transform = 'translateY(0rem)';
+        })
+
+        secondDiv.style.opacity = 1;
+        secondDiv.style.transform = 'translateY(0rem)';
+
+    }, timeOutMilliSeconds)
+}
+
+revealParaElements()
+
+
+
+// let options = {
+//     // root: document.querySelector('body'),
+//     root: null,
+//     rootMargin: "48px",
+//     threshold: 1.0
+// }
+
+// let observer = new IntersectionObserver(() => {
+//     console.log("visible!");
+//     contentPara.style.opacity = 1;
+//     contentPara.style.transform = "translateY(0)";
+// }, options)
+
+// observer.observe(contentPara);

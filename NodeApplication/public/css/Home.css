@@ -1,73 +1,4 @@
 
-nav {
-    transition: all 0.4s ease;
-}
-nav .navigation-content{
-
-    min-width: 80vw;
-    margin: 0 auto;
-    color: var(--color-primary);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 2rem;
-    position: relative;
-
-}
-
-nav h1 {
-    font-family: "Akshar";
-    font-weight: 500;
-    
-}
-a {
-    color: inherit
-}
-
-
-li[class="btn-active"] {
-    text-decoration: none;
-    background: none;
-    border: none;
-    color: var(--color-secondary);
-    background: var(--color-primary);
-    padding: 1.5rem 2.5rem;
-    border-radius: var(--border-radius-main);
-    transition: all 0.4s ease;
-}
-
-li[class="btn-active"]:hover {
-    background: #a631ff;
-    color: #fff;
-    cursor: pointer;
-    transform: translateY(-5px);
-} 
-
-.header-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 3.4rem;
-    transition: all 0.4s ease;
-    font-size: 0.8rem;
-    font-family: var(--font-content);
-    transform-origin: top right;
-}
-
-.toggle-dot {
-    cursor: pointer;
-    transition: all 0.4s ease;
-    background: #ffffff;
-    height: 1.5em;
-    width: 1.5em;
-    border-radius: 50%;
-    z-index: 10;
-}
-.toggle-dot:hover {
-    border-radius: 5px;
-    background: #ff9900;
-
-}
 
 /* HERO CONTENT */
 .hero-content {
@@ -79,7 +10,8 @@ li[class="btn-active"]:hover {
     color: var(--color-primary);
     font-family: "Oswald";
     /* min-width: 80vw; */
-    text-align:justify
+    text-align:justify;
+    z-index: -1
 }
 
 .para {
@@ -130,7 +62,6 @@ li[class="btn-active"]:hover {
 }
 
 
-
 @keyframes rotate {
     0% {
         transform: rotate(0deg);
@@ -142,33 +73,6 @@ li[class="btn-active"]:hover {
 }
 
 @media screen and (max-width: 1100px) {
-
-    .header-content {
-        flex-direction: column;
-        gap: 0;
-        color: #000;
-        position: absolute;
-        z-index: 3;
-        right: -12rem;
-        top: 2.2rem;
-    }
-
-    
-    ul.header-content li {
-        color: #000;
-        background-color: #fff;
-        padding: 0.5rem 1.2rem;
-        border-radius: 15px;
-        margin: 10px;
-        filter: drop-shadow(0 0 10px #000);
-        /* margin: 10px; */
-
-    }
-
-    .hidden {
-        transform: scale(0,0);
-        opacity: 0;
-    }
 
     .row {
         line-height: var(--base-line-height);
@@ -191,11 +95,7 @@ li[class="btn-active"]:hover {
         text-align: center;
     }
 }
-@media screen and (width > 1100px) {
-    .toggle-dot {
-        display: none;
-    }
-}
+
 
 @media screen and  (max-width: 450px) {
     .img {

@@ -110,7 +110,7 @@ function hideTextContent(){
 
     // Styling the div
     secondDiv.style.opacity = 0;
-    secondDiv.style.transform = 'translateY(1rem)';
+    secondDiv.style.transform = 'translateY(3rem)';
     secondDiv.style.transition = 'all 0.4s ease';
     secondDiv.style.transitionDelay = animationDelay+"s";;
     animationDelay+= 0.1;
@@ -132,20 +132,3 @@ function revealParaElements(){
 }
 
 revealParaElements()
-
-
-
-// let options = {
-//     // root: document.querySelector('body'),
-//     root: null,
-//     rootMargin: "48px",
-//     threshold: 1.0
-// }
-
-// let observer = new IntersectionObserver(() => {
-//     console.log("visible!");
-//     contentPara.style.opacity = 1;
-//     contentPara.style.transform = "translateY(0)";
-// }, options)
-
-// observer.observe(contentPara);

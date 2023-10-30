@@ -61,6 +61,23 @@
     text-align:right;
 }
 
+.card {
+    font-family: sans-serif;
+    padding: 0.8rem 1.2rem;
+    border: 2.5px solid black;
+    width: max-content;
+    margin: 0.8rem;
+    border-radius: 10px;
+    opacity: 0;
+    transition: 150ms;
+    transform: translateX(100px);
+    background: #fff;
+  }
+  
+  .card.show {
+    opacity: 1;
+    transform: translateX(0px);
+  }
 
 @keyframes rotate {
     0% {
@@ -209,4 +226,10 @@
     .content-para {
         font-size: 1.3em;
     }
+}
+
+
+.sample {
+    margin-top: 30rem;
+    margin-bottom: 30rem;
 }

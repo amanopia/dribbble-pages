@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./css/root-styles.css"/>
     <link rel="stylesheet" href="./css/Home.css"/>
     <link rel="stylesheet" href="./css/header.css" />
-    <link rel="stylesheet" href="./css/style-section.css" />
+    <link rel="stylesheet" href="./css/home-service-section.css" />
 
     {{!-- JAVASCRIPT --}}
     <script defer src="./js/anime.js"></script>
@@ -16,10 +16,14 @@
     <title>Document</title>
 </head>
 <body>
-    {{>header}}
 
-    <section>
-    <div class="hero-content">
+    <section class="hero-container">
+    <div class="parent-container-hero-section">
+        {{!-- A Parent container has been added so that the sections can be given ehatever coor background. --}}
+        <!-- Through this, we won't need to shrink body to 80vw -->
+        {{!-- We can shring the parent container to the required widths. Give background color to sections and have body with 100% width --}}
+        {{>header}}
+        <div class="hero-content">
         <div class="row para1">
             <span>Bounce</span>
             <span>your</span>
@@ -46,11 +50,49 @@
             </div>
         </div>
     </div>
+    </div>
+
     </section>
 
-    <div class="service-section">
+    {{!-- main container --}}
+    <section class="service-container"> 
+        {{!-- centering container --}}
+        <div class="parent-container-service-section">
+            {{!-- content container --}}
+            <div class="service-section">
+            <div class="content-upper">
+                <div>
+                    <span>Provide the bese service with</span>
+                    <span>Ideas that are out of the box</span>
+                </div>
+                <p>At Bounce, we foster a remarkable team culture. Join us and be part of a passionate team that loves what they do, making work a joyful journey.</p>
+            </div>
 
-    </div>
+            <div class="im service-section-image"></div>
+
+            <div class="client-data">
+                <div class="client-data-content">
+                    <span>12+</span>
+                    <span>Years of Experience</span>
+                </div>
+                <div class="client-data-content">
+                    <span>100+</span>
+                    <span>Trusting Organizations</span>
+                </div>
+                <div class="client-data-content">
+                    <span>1,2k</span>
+                    <span>Clients Served</span>
+                </div>
+                <div class="client-data-content">
+                    <span>3</span>
+                    <span>Times Great Place to work</span>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    </section>
+
 
 
     <!--?xml version="1.0" standalone="no"?-->              

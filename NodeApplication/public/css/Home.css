@@ -1,4 +1,10 @@
-
+.hero-container {
+    background: var(--color-secondary);
+}
+.parent-container-hero-section {
+    margin: 0 auto;
+    width: 80vw;
+}
 
 /* HERO CONTENT */
 .hero-content {
@@ -29,7 +35,7 @@
 }
 
 .img {
-    flex: 1;
+    flex-grow: 1;
     background-size: auto 15rem;
     border-radius: 15px;
     height: var(--base-image-size);
@@ -61,23 +67,6 @@
     text-align:right;
 }
 
-.card {
-    font-family: sans-serif;
-    padding: 0.8rem 1.2rem;
-    border: 2.5px solid black;
-    width: max-content;
-    margin: 0.8rem;
-    border-radius: 10px;
-    opacity: 0;
-    transition: 150ms;
-    transform: translateX(100px);
-    background: #fff;
-  }
-  
-  .card.show {
-    opacity: 1;
-    transform: translateX(0px);
-  }
 
 @keyframes rotate {
     0% {

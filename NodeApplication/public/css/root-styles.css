@@ -19,7 +19,7 @@
     
 }
 body {
-    width: 80vw;
+    /* width: 80vw; */
     margin: 0 auto;
     background-color: var(--color-background-black);
     font-size: var(--base-font-size);
@@ -35,3 +35,16 @@ p {
     line-height: 2.3;
 }
 
+/* SETTING UP SCROLL SNAPPING */
+html {
+    scroll-snap-type: y mandatory;
+    /* scroll-padding-top: 5rem; */
+}
+
+section {
+    width: 100%;
+    margin: 0 auto;
+    scroll-snap-align: start;
+    scroll-snap-stop: normal;
+    scroll-margin-top: 1rem;
+}

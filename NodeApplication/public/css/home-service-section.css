@@ -48,26 +48,24 @@
 }
 
 .client-data-content {
-    flex-grow: 1;
+    flex: 1;
     color: #fff;
     height: 8rem;
-    width: 11rem;
     width: min-content;
     background: #000;
     border-radius: 15px;;
 
     display: flex;
-    gap: 0.8rem;
-    /* To place content in the center of the box */
     place-content: center;
     align-items: center;
+    gap: 0.8rem;
 }
 
 .client-data-content span:nth-child(1) {
     font-family: 'Oswald';
 }
 .client-data-content span:nth-child(2) {
-    width: 3rem;
+    width: 4rem;
     font-family: 'Poppins';
     font-size: 0.7em;
 }
@@ -84,12 +82,10 @@
     .content-upper p {
         text-align: justify;
     }
+}
 
-    .client-data-content span:nth-child(1) {
-        font-family: 'Oswald';
-        font-size: calc(var(--base-font-size)*1.5);
-    }
-
+@media ( width < 768px) {
+    
     .client-data {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -103,11 +99,16 @@
         text-align: center;
         padding: 1rem;
         width: inherit;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
     }
-}
 
-@media ( width < 767px) {
-    
+    .client-data-content span:nth-child(1) {
+        font-family: 'Oswald';
+        font-size: calc(var(--base-font-size)*1.5);
+    }
 }
 
 @media ( min-width: 768px) {
@@ -115,9 +116,6 @@
     .content-upper {
         flex-direction: row;
         align-items: flex-start;
-    }
-    .service-section {
-        background: blue;
     }
     .client-data-content span:nth-child(1) {
         font-family: 'Oswald';
@@ -134,16 +132,12 @@
     .client-data-content {
         background: #000;
         color: #fff;
-        text-align: center;
         padding: 1rem;
         width: inherit;
     }
 }
 
 @media ( min-width: 1024px) {
-    .service-section {
-        background: red;
-    }
     .client-data-content span:nth-child(1) {
         font-family: 'Oswald';
         font-size: calc(var(--base-font-size)*2.5);
@@ -157,10 +151,6 @@
 }
 
 @media ( min-width: 1200px) {
-    .service-section {
-        background: greenyellow;
-    }
-
     .client-data-content span:nth-child(1) {
         font-family: 'Oswald';
         font-size: calc(var(--base-font-size)*3);

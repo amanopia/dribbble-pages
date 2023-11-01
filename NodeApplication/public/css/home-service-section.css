@@ -8,7 +8,6 @@
 }
 
 .service-section {
-    background: #fff;
     margin-top: 5rem;
 
     display: flex;
@@ -16,19 +15,20 @@
 }
 
 .content-upper {
-    font-family: "Oswald";
-    text-transform: uppercase;
     display: flex;
     gap: 3rem;
-
+    justify-content: space-between;
 }
 
 .content-upper > div:first-child {
+    font-family: "Oswald";
+    text-transform: uppercase;
     font-weight: 700;
     font-size: 3.3em;
     line-height: 1;
     letter-spacing: -2px;
 }
+
 
 .im {
     flex-grow: 1;
@@ -54,7 +54,7 @@
     width: min-content;
     background: #000;
     border-radius: 15px;;
-
+    padding: 1.5rem;
     display: flex;
     place-content: center;
     align-items: center;
@@ -69,23 +69,18 @@
     font-family: 'Poppins';
     font-size: 0.7em;
 }
-@media ( width < 650px) {
+
+
+@media ( width < 768px) {
     .content-upper {
         flex-direction: column;
         align-items: center;
         gap: 2rem;
     }
 
-    .content-upper > div:first-child {
-        /* text-align: justify; */
-    }
     .content-upper p {
         text-align: justify;
     }
-}
-
-@media ( width < 768px) {
-    
     .client-data {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -97,7 +92,7 @@
         background: #000;
         color: #fff;
         text-align: center;
-        padding: 1rem;
+        
         width: inherit;
         flex-direction: column;
         text-align: center;
@@ -132,7 +127,6 @@
     .client-data-content {
         background: #000;
         color: #fff;
-        padding: 1rem;
         width: inherit;
     }
 }

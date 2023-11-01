@@ -17,7 +17,7 @@
     font-family: "Oswald";
     /* min-width: 80vw; */
     text-align:justify;
-    z-index: -1
+    z-index: -10
 }
 
 .para {
@@ -215,10 +215,4 @@
     .content-para {
         font-size: 1.3em;
     }
-}
-
-
-.sample {
-    margin-top: 30rem;
-    margin-bottom: 30rem;
 }

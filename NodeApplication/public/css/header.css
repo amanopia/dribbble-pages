@@ -52,6 +52,7 @@ li[class="btn-active"]:hover {
     font-size: 0.8rem;
     font-family: var(--font-content);
     transform-origin: top right;
+    z-index: 5;
 }
 
 .toggle-dot {
@@ -85,10 +86,11 @@ li[class="btn-active"]:hover {
     
     ul.header-content li {
         color: #000;
-        background-color: #ffffff;
+        background-color: #ff0000;
         padding: 0.5rem 1.2rem;
         border-radius: 15px;
         margin: 10px;
+        z-index: 4;
         filter: drop-shadow(0 0 10px #000000);
 
     }

@@ -1,0 +1,146 @@
+.ideas-container {
+    padding-top:6rem;
+    background: #fff;
+    padding-bottom: 5rem;
+    margin-top : 5rem;
+}
+
+.parent-container-ideas-section {
+    width: 80vw;
+    margin: 0 auto; 
+}
+
+.ideas-container-upper {
+    display: flex;
+    gap: 3rem;
+    justify-content: space-between;
+    border-bottom: 3px solid black;
+    padding-bottom: 3.5rem;
+}
+
+.ideas-container-upper div:first-of-type div:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 3.3em;
+    line-height: 1;
+    letter-spacing: -2px;
+}
+
+.ideas-container-image {
+    flex-grow: 1;
+    height: calc(var(--base-image-size)*8);
+    background: url('../assets/img-people.jpg');
+    background-size: auto 35rem;
+    border-radius: 15px;
+}
+
+.content-left {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.ideas-button-container {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.ideas-button-container button {
+    background: #fc8035;
+    padding: 1rem 1.2rem;
+    color: #fff;
+    border: none;
+    font-family: "Poppins";
+    border-radius: 15px;
+    transition: all 0.4s cubic-bezier(.38,.08,.03,.99);
+}
+
+.ideas-button-container button:nth-child(2) {
+    background-color: #000;
+
+}
+
+.ideas-button-container button:nth-child(2):hover {
+    transform: scale(1.06, 1.06);
+    background-color: #1c1c1c;
+    cursor: pointer;
+}
+
+.ideas-button-container button:nth-child(1):hover {
+    transform: scale(1.06, 1.06);
+    background-color:  #fe8c44;
+    cursor: pointer;
+}
+
+
+/* BOTTOM CONTAINER  */
+.ideas-container-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.container-bottom-left {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.container-bottom-left p {
+    line-height: 1.9;
+}
+.container-bottom-left h1 {
+    font-family: 'Akshar';
+    font-weight: 700;
+    letter-spacing: -1px;;
+}
+
+.container-bottom-buttons {
+    display: flex;
+    gap: 0.5rem;
+}
+.container-bottom-buttons button {
+    padding: 0.9rem 1.2rem;
+    font-size: 0.7em;
+    background: transparent;
+    border: 1.5px solid black;
+    border-radius: 15px;
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+
+.container-bottom-buttons button:hover {
+    background: #fc8035;
+    color: #fff;
+}
+
+@media (width < 750px) {
+    .ideas-container-bottom {
+        flex-direction: column;
+        gap: 1.5rem;
+    }    
+}
+@media (width < 950px) {
+
+    .ideas-container-upper {
+        flex-direction: column;
+    }
+
+    .content-left {
+        width: 80%;
+    }
+}
+
+@media (min-width: 950px) {
+    .ideas-container-upper {
+        flex-direction: row;
+    }
+
+    .content-left {
+        width: 40%;
+    }
+}

@@ -144,3 +144,9 @@
         width: 40%;
     }
 }
+
+@media (min-width: 1281px) {
+    .container-bottom-buttons button {
+        font-size: 0.8em;
+    }
+}

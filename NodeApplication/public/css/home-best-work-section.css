@@ -214,7 +214,12 @@
     }
 }
 
-@media (min-width: 1200px ) {
-    
+@media (min-width: 1281px ) {
+
+    .work-content-image {
+        background-size: auto 55rem;
+        height: calc(var(--base-image-size)*11);;
+        background-position: 0 0;
+    }
 }
 

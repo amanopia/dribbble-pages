@@ -132,3 +132,6 @@ function revealParaElements(){
 }
 
 revealParaElements()
+
+
+console.log(window.innerWidth);

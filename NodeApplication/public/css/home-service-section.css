@@ -1,3 +1,5 @@
+
+
 .service-container {
     background: #fff;
     margin-top: 10rem;
@@ -20,6 +22,20 @@
     justify-content: space-between;
 }
 
+.hidden {
+    opacity: 0;
+    transform: translateY(0.5rem);
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0rem);
+}
+.content-upper p {
+        /* hiding elements */
+    opacity: 0;
+    transform: translateY(0.5rem);
+}
 .content-upper > div:first-child {
     font-family: "Oswald", sans-serif;
     text-transform: uppercase;
@@ -27,8 +43,21 @@
     font-size: 3.3em;
     line-height: 1;
     letter-spacing: -2px;
+
+    /* hiding elements */
+    opacity: 0;
+    transform: translateY(0.5rem);
 }
 
+.content-upper > div:first-child.show  {
+    opacity: 1;
+    transform: translateY(0rem);
+}
+
+.content-upper p.show {
+    opacity: 1;
+    transform: translateY(0rem);
+}
 
 .im {
     flex-grow: 1;

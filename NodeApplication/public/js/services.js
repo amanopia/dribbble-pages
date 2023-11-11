@@ -1,5 +1,5 @@
 const timeOutCount = 600;
-let serviceAnimationDelay = 0.1;
+serviceAnimationDelay = 0.1;
 
 //! ------------------ UPPER CONTENT ------------------
 const upperContentChildren = [...document.querySelector('.content-upper').children];

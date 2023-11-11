@@ -39,13 +39,13 @@ offerUpperContentChildren.forEach((children) => {
 const offerBottomSectionChildren = [...document.querySelector('.offers').children];
 const offerBottomParentContainer = document.querySelector('.offers');
 
-for( let i = 0; i<offerBottomSectionChildren.length; i++){
-    offerBottomSectionChildren[i].classList.add('hidden-rise');
-    offerBottomSectionChildren[i].style.transition = "all 0.4s cubic-bezier(.7,-0.02,.73,1.01)"
-    offerBottomSectionChildren[i].style.transitionDelay = serviceAnimationDelay + "s";
+for(const element of offerBottomSectionChildren){
+    element.classList.add('hide');
+    element.style.transition = "all 0.4s cubic-bezier(.7,-0.02,.73,1.01)"
+    element.style.transitionDelay = serviceAnimationDelay + "s";
     
     // Adding animation to inner elements
-    const childArr = [...offerBottomSectionChildren[i].children]
+    const childArr = [...element.children]
     //? setting a new delay duration for inner elements
     //? Delayed the inner duration by 0.5s which is enough for the outer box animation to load and the inner to start executing
     let delayDuration = 0.5;
@@ -63,8 +63,9 @@ for( let i = 0; i<offerBottomSectionChildren.length; i++){
 const bottomOfferContainerObserver = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if(entry.isIntersecting){
+            console.log("offers is intersecting");
             offerBottomSectionChildren.forEach((child) => {
-                child.classList.toggle('hidden-rise', false);
+                child.classList.remove('hide', false);
                 
                 const contentChildren = [...child.children];
                 contentChildren.forEach((contentChild) => {
@@ -74,7 +75,7 @@ const bottomOfferContainerObserver = new IntersectionObserver((entries) => {
         }
     })
 }, {
-    threshold: 1
+    threshold: 0.3
 })
 
 bottomOfferContainerObserver.observe(offerBottomParentContainer);

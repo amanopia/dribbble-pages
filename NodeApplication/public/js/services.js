@@ -12,13 +12,23 @@ for(let i = 0; i<upperContentChildren.length; i++){
     upperContentChildren[i].style.transitionDelay = serviceAnimationDelay + "s";
     serviceAnimationDelay += 0.1;
 }
+
+//! ------------------ IMAGE ------------------
+const serviceContainerImage = document.querySelector('.service-section-image');
+// IMAGE -- INITIAAL STYLINGS
+(function imageInitialStyles(){
+    serviceContainerImage.classList.add('hidden-rise');
+    serviceContainerImage.style.transition = "all 0.4s cubic-bezier(.7,-0.02,.73,1.01)"
+    serviceContainerImage.style.transitionDelay = serviceAnimationDelay + "s";
+    serviceAnimationDelay += 0.1;
+})();
 // IMAGE -- OBSERVER FUNCTION
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         // entry.target.classList.toggle('hidden', entry.isIntersecting); // this adds the hidden class when element.isIntersecting evaluates to true
-
         if(entry.isIntersecting){
             setTimeout(() => {
+                serviceContainerImage.classList.remove('hidden-rise');
                 entry.target.classList.toggle('hidden', false);
                 observer.unobserve(entry.target);
             }, timeOutCount)
@@ -30,37 +40,8 @@ const observer = new IntersectionObserver((entries) => {
 })
 
 upperContentChildren.forEach((children) => {
-    // console.log(children);
     observer.observe(children);
 })
-
-//! ------------------ IMAGE ------------------
-const serviceContainerImage = document.querySelector('.service-section-image');
-const cont = document.querySelector('.service-image-container');
-// IMAGE -- INITIAAL STYLINGS
-(function imageInitialStyles(){
-    serviceContainerImage.classList.add('hidden-rise');
-    serviceContainerImage.style.transition = "all 0.4s cubic-bezier(.7,-0.02,.73,1.01)"
-    serviceContainerImage.style.transitionDelay = serviceAnimationDelay + "s";
-    serviceAnimationDelay += 0.1;
-})();
-// IMAGE -- OBSERVER FUNCTION
-const observerRise = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-        if(entry.isIntersecting){
-            console.log("is intersecting")
-            setTimeout(() => {
-                entry.target.children[0].classList.toggle('hidden-rise', false);
-            }, timeOutCount);
-            // entry.target.children[0].classList.toggle('hidden-rise', false);
-        }
-    })
-}, {
-    threshold: 1,
-})
-
-observerRise.observe(cont);
-
 
 //! ------------------ CLIENT STATS ------------------
 const clientDataContainer = document.querySelector('.client-data');

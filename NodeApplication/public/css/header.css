@@ -1,10 +1,10 @@
-
 nav {
     transition: all 0.4s ease;
-    /* overflow-x: hidden; */
+    position: relative;
+    z-index: 10;
 }
-nav .navigation-content{
 
+nav .navigation-content {
     min-width: 80vw;
     margin: 0 auto;
     color: var(--color-primary);
@@ -18,19 +18,17 @@ nav .navigation-content{
 nav h1 {
     font-family: "Akshar";
     font-weight: 500;
-    
-}
-a {
-    color: inherit
 }
 
+a {
+    color: inherit;
+}
 
 li[class="btn-active"] {
     text-decoration: none;
-    background: none;
+    background: var(--color-primary);
     border: none;
     color: var(--color-secondary);
-    background: var(--color-primary);
     padding: 1.5rem 2.5rem;
     border-radius: var(--border-radius-main);
     transition: all 0.4s ease;
@@ -41,7 +39,7 @@ li[class="btn-active"]:hover {
     color: #fff;
     cursor: pointer;
     transform: translateY(-5px);
-} 
+}
 
 .header-content {
     display: flex;
@@ -64,15 +62,13 @@ li[class="btn-active"]:hover {
     border-radius: 50%;
     z-index: 10;
 }
+
 .toggle-dot:hover {
     border-radius: 5px;
     background: #ff9900;
-
 }
 
-
 @media screen and (max-width: 1100px) {
-
     .header-content {
         flex-direction: column;
         gap: 0;
@@ -83,7 +79,6 @@ li[class="btn-active"]:hover {
         top: 2.2rem;
     }
 
-    
     ul.header-content li {
         color: #000;
         background-color: #fff;
@@ -91,17 +86,16 @@ li[class="btn-active"]:hover {
         border-radius: 15px;
         margin: 10px;
         z-index: 4;
-        filter: drop-shadow(0 0 10px #f20000);
-
+        filter: drop-shadow(0 0 10px #000000);
     }
 
     .hidden {
-        transform: scale(0,0);
+        transform: scale(0, 0);
         opacity: 0;
     }
 }
 
-@media screen and (width > 1100px) {
+@media screen and (min-width: 1100px) {
     .toggle-dot {
         display: none;
     }

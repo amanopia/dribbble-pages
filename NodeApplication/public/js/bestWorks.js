@@ -1,7 +1,7 @@
 //! ------------------ UPPER CONTENT ------------------
 serviceAnimationDelay = 0.1;
-const workContentUpper = document.querySelector('.work-content-upper');
-const workContentUpperChildren = [...workContentUpper.children];
+ const workContentUpperElement = document.querySelector('.work-content-upper');
+const workContentUpperChildren = [...workContentUpperElement.children];
 
 
 // UPPER CONTENT -- INITIAAL STYLINGS
@@ -76,7 +76,7 @@ const contO = new IntersectionObserver((entries) => {
                     anime(obj);
                     containerMidObserved.classList.remove('hidden');
                 })
-            }, 1000)
+            }, 500)
         }
     }) 
 }, {
@@ -84,7 +84,7 @@ const contO = new IntersectionObserver((entries) => {
     // rootMargin: "-600px"
 })
 
-contO.observe(workContentUpper);
+contO.observe(workContentUpperElement);
 
 // const containerMidChildren = [...containerMid.children];
 // const containerMidRev = document.querySelector('.container-mid-rev');

@@ -6,6 +6,7 @@
     width: 80vw;
     overflow-x: hidden;
     overflow-y: hidden;
+    
 }
 
 /* HERO CONTENT */
@@ -19,7 +20,8 @@
     font-family: "Oswald";
     /* min-width: 80vw; */
     text-align:justify;
-    z-index: -10
+    z-index: 1;
+    position: relative;
 }
 
 .para {

@@ -2,8 +2,6 @@ const dropdown = document.querySelector('.header-content');
 const toggleDot = document.querySelector('.toggle-dot');
 const liElements = document.querySelectorAll('.header-li-el');
 
-const head = document.querySelector('.headding');
-
 const timeOutMilliSeconds = 2000;
 
 let isAnimated = false;

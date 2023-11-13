@@ -4,13 +4,15 @@
 .parent-container-hero-section {
     margin: 0 auto;
     width: 80vw;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 /* HERO CONTENT */
 .hero-content {
     display: flex;
     flex-direction: column;
-    
+
     margin-top: 10rem;
     text-transform: uppercase;
     color: var(--color-primary);

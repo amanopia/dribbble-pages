@@ -70,17 +70,18 @@ const contO = new IntersectionObserver((entries) => {
 
         if(entry.isIntersecting) {
             console.log("entry is intersecting");
-            anime(obj);
-            containerMidObserved.classList.remove('hidden');
             setTimeout(() => {
                 containerMidProjectArr.forEach((child) => {
                     child.classList.remove('hidden'); 
+                    anime(obj);
+                    containerMidObserved.classList.remove('hidden');
                 })
             }, 1000)
         }
     }) 
 }, {
-    threshold: 1
+    threshold: 1,
+    // rootMargin: "-600px"
 })
 
 contO.observe(workContentUpper);
@@ -135,7 +136,7 @@ const cont1 = new IntersectionObserver((entries) => {
         }
     })
 }, {
-    threshold: 0.6
+    threshold: 0.2
 })
 
 cont1.observe(containerMidRev);

@@ -10,7 +10,10 @@ let animationObject = {
     translateX: -190,
     delay: anime.stagger(100)
 }
-
+if(window.innerWidth < '1100') {
+    dropdown.classList.add('hidden');
+    console.log(window.innerWidth)
+}
 toggleDot.addEventListener('click', () => {
     dropdown.classList.toggle('hidden');
     dropdown.children[0].classList.remove('btn-active');

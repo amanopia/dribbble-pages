@@ -13,6 +13,7 @@ nav .navigation-content {
     align-items: center;
     margin-top: 2rem;
     position: relative;
+    padding: 1rem;
 }
 
 nav h1 {

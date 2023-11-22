@@ -6,11 +6,20 @@
 
     {{!-- STYLES --}}
     <link rel="stylesheet" href="./css/root-styles.css"/>
-    
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/home-ideas-section.css" />
+    <link rel="stylesheet" href="./css/about.css"/>
     <title>Document</title>
 </head>
 <body>
-    {{>header}}
-    <h1> This is the about view</h1>
+    <div class="about-container">
+        <div class="parent-container-about-page">
+            <div class="header-black">
+                {{>header}}
+            </div>
+            {{>footer}}
+        </div>
+    </div>
+
 </body>
 </html>

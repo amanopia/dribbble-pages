@@ -1,0 +1,14 @@
+.about-container {
+    background: #fff;
+    height: 100vh;
+}
+
+.parent-container-about-page {
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.header-black {
+    background: var(--color-background-black);
+    border-radius: 15px;;
+}

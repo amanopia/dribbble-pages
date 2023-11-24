@@ -6,9 +6,24 @@
 .parent-container-about-page {
     width: 80vw;
     margin: 0 auto;
+    position: relative;
 }
 
 .header-black {
+    position: relative;
+    /* background: var(--color-background-black); */
+    border-radius: 15px;
+    /* transform: translateY(-10rem); */
+
+}
+
+.hidden-container {
+    position: absolute;
     background: var(--color-background-black);
-    border-radius: 15px;;
+
+    /* z-index: 10; */
+    top: 50%;
+    left: 50%;
+    border-radius: 15px;
+    transform: translate(-50%, -50%);
 }

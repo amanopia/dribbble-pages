@@ -1,51 +1,50 @@
-@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@500&family=Oswald:wght@400;500;700&family=Poppins:wght@300;400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Akshar:wght@300;400;500&family=Oswald:wght@400;500;700&family=Poppins:wght@300;400;500&display=swap");
 
 * {
-    list-style: none;
-    text-decoration: none;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 :root {
-    --color-primary: #fff;
-    --color-secondary: #1e1d1d;
-    --color-background-black: #1e1d1d;
-    --font-content: "Poppins";
-    --font-headings: "Oswald";
-    --border-radius-main: 15px;
-    --base-line-height: 1.1;
-    --base-font-size: 16px;
-    --base-image-size: 45px;
-    
+  --color-primary: #fff;
+  --color-secondary: #1e1d1d;
+  --color-background-black: #1e1d1d;
+  --font-content: "Poppins";
+  --font-headings: "Oswald";
+  --border-radius-main: 15px;
+  --base-line-height: 1.1;
+  --base-font-size: 16px;
+  --base-image-size: 45px;
 }
 body {
-    /* width: 80vw; */
-    margin: 0 auto;
-    background-color: var(--color-background-black);
-    font-size: var(--base-font-size);
-    display: flex;
-    flex-direction: column;
-    overflow-x: hidden;
+  /* width: 80vw; */
+  margin: 0 auto;
+  background-color: var(--color-background-black);
+  font-size: var(--base-font-size);
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
 }
 
 p {
-    font-family: var(--font-content);
-    text-transform: none;
-    font-size: 0.7em;
-    line-height: 2.3;
+  font-family: var(--font-content);
+  text-transform: none;
+  font-size: 0.7em;
+  line-height: 2.3;
 }
 
 /* SETTING UP SCROLL SNAPPING */
 html {
-    scroll-snap-type: y mandatory;
-    /* scroll-padding-top: 5rem; */
+  scroll-snap-type: y mandatory;
+  /* scroll-padding-top: 5rem; */
 }
 
 section {
-    width: 100%;
-    margin: 0 auto;
-    scroll-snap-align: start;
-    scroll-snap-stop: normal;
-    scroll-margin-top: 1rem;
+  width: 100%;
+  margin: 0 auto;
+  scroll-snap-align: start;
+  scroll-snap-stop: normal;
+  scroll-margin-top: 1rem;
 }

@@ -1,0 +1,44 @@
+/* BOTTOM CONTAINER  */
+.ideas-container-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3rem;
+  border-top: 3px solid black;
+  padding-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.container-bottom-left {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.container-bottom-left p {
+  line-height: 1.9;
+}
+.container-bottom-left h1 {
+  font-family: "Akshar";
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+.container-bottom-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+.container-bottom-buttons button {
+  padding: 0.9rem 1.2rem;
+  font-size: 0.7em;
+  background: transparent;
+  border: 1.5px solid black;
+  border-radius: 15px;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+.container-bottom-buttons button:hover {
+  background: #fc8035;
+  color: #fff;
+}

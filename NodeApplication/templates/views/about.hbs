@@ -1,35 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     {{!-- STYLES --}}
-    <link rel="stylesheet" href="./css/root-styles.css"/>
+    <link rel="stylesheet" href="./css/root-styles.css" />
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/home-ideas-section.css" />
-    <link rel="stylesheet" href="./css/about.css"/>
+    <link rel="stylesheet" href="./css/about.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
 
     {{!-- JAVASCRIPT --}}
     <script defer src="./js/about.js"></script>
 
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="about-container">
-        <div class="parent-container-about-page">
-            <div class="header-black">
-                <div class="hidden-container"></div>
-                {{>header}}
-            </div>
-            <div class="footer-container">
-            {{>footer}}
-
-            </div>
-
+      <div class="parent-container-about-page">
+        <div class="header-black">
+          <div class="hidden-container"></div>
+          {{>header}}
         </div>
-        
+        <div class="about-content-middle">
+          <div class="about-image">
+            {{!-- <video autoplay muted loop>
+              <source src="{{video}}" type="video/mp4" />
+            </video> --}}
+          </div>
+          <div class="about-div2">
+            <div class="about-heading-content">
+              <p>
+                Driving
+                <span
+                  ><img
+  
+                    src="{{img1}}"
+                    alt="circled-chevron-right"
+                /></span>
+                Digital
+              </p>
+              <p>
+                <span
+                  ><img
+                    src="{{img1}}"
+                    alt="circled-chevron-right"
+                /></span>
+                Success
+                <span
+                  ><img
+                    src="{{img2}}"
+                    alt="circled-chevron-right"
+                /></span>
+                Together
+              </p>
+            </div>
+            <p>
+              Drawing from a decade of crafting innovative designs for our
+              clients, we hold a unique advantage in the market. Our extensive
+              experience isn't just a testament to our expertise; it's the key
+              to staying ahead. It enables us to swiftly adapt to our clients'
+              evolving needs, solidifying our position as industry leaders.
+            </p>
+          </div>
+        </div>
+        <div class="footer-container">{{>footer}}</div>
+      </div>
     </div>
-
-</body>
+  </body>
 </html>

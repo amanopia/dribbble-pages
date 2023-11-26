@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     {{!-- STYLES --}}
-    <link rel="stylesheet" href="./css/root-styles.css"/>
-    <link rel="stylesheet" href="./css/Home.css"/>
+    <link rel="stylesheet" href="./css/root-styles.css" />
+    <link rel="stylesheet" href="./css/Home.css" />
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/home-service-section.css" />
     <link rel="stylesheet" href="./css/home-offer-section.css" />
@@ -20,209 +20,256 @@
     <script defer src="./js/offer.js"></script>
     <script defer src="./js/bestWorks.js"></script>
     <script defer src="./js/ideas.js"></script>
-    
-    <title>Document</title>
-</head>
-<body>
 
+    <title>Document</title>
+  </head>
+  <body>
     <section class="hero-container">
-    <div class="parent-container-hero-section">
-        {{!-- A Parent container has been added so that the sections can be given ehatever coor background. --}}
+      <div class="parent-container-hero-section">
+        {{!-- A Parent container has been added so that the sections can be
+        given ehatever coor background. --}}
         <!-- Through this, we won't need to shrink body to 80vw -->
-        {{!-- We can shring the parent container to the required widths. Give background color to sections and have body with 100% width --}}
+        {{!-- We can shring the parent container to the required widths. Give
+        background color to sections and have body with 100% width --}}
         {{>header}}
         <div class="hero-content">
-        <div class="row para1">
+          <div class="row para1">
             <span>Bounce</span>
             <span>your</span>
             <span>ideas</span>
             <div class="img img-1"></div>
-        </div>
-        <div class="row para2">
+          </div>
+          <div class="row para2">
             <div class="img img-2"></div>
             <span>Make</span>
             <span>reality</span>
             <span>and</span>
-        </div>
-        <div class="row para3">
+          </div>
+          <div class="row para3">
             <span>Boost</span>
             <span>Your</span>
             <span>Business</span>
-            <div><img class="star-img" src={{img}} alt="image"></div>
-        </div>
-        <div class="content-para">
-            <p class="ellipsis-text">Modern design is a dynamic and influential approach that emphasizes simplicity, functionality, and innovation. It prioritizes clean lines, minimalism, and the use of advanced materials and technologies. Modern design often focuses on open spaces and natural light, creating environments that are aesthetically pleasing and highly functional. </p>
+            <div><img class="star-img" src="{{img}}" alt="image" /></div>
+          </div>
+          <div class="content-para">
+            <p class="ellipsis-text">
+              Modern design is a dynamic and influential approach that
+              emphasizes simplicity, functionality, and innovation. It
+              prioritizes clean lines, minimalism, and the use of advanced
+              materials and technologies. Modern design often focuses on open
+              spaces and natural light, creating environments that are
+              aesthetically pleasing and highly functional.
+            </p>
             <div>
-                <p>Digital Agency</p>
-                <p>Based in Bhopal, India</p>
+              <p>Digital Agency</p>
+              <p>Based in Bhopal, India</p>
             </div>
+          </div>
         </div>
-    </div>
-    </div>
-
+      </div>
     </section>
 
     {{!-- main container --}}
-    <section class="service-container"> 
-        {{!-- centering container --}}
-        <div class="parent-container-service-section">
-            {{!-- content container --}}
-            <div class="service-section">
-            <div class="content-upper">
-                <div >
-                    <span >Provide the best service with</span>
-                    <span>Ideas that are out of the box</span>
-                </div>
-                <p >At Bounce, we foster a remarkable team culture. Join us and be part of a passionate team that loves what they do, making work a joyful journey.  </p>
+    <section class="service-container">
+      {{!-- centering container --}}
+      <div class="parent-container-service-section">
+        {{!-- content container --}}
+        <div class="service-section">
+          <div class="content-upper">
+            <div>
+              <span>Provide the best service with</span>
+              <span>Ideas that are out of the box</span>
             </div>
+            <p>
+              At Bounce, we foster a remarkable team culture. Join us and be
+              part of a passionate team that loves what they do, making work a
+              joyful journey.
+            </p>
+          </div>
 
-            <div class="service-image-container">
-                <div class="im service-section-image"></div>
-            </div>
+          <div class="service-image-container">
+            <div class="im service-section-image"></div>
+          </div>
 
-            <div class="client-data">
-                <div class="client-data-content">
-                    <span>12+</span>
-                    <span>Years of Experience</span>
-                </div>
-                <div class="client-data-content">
-                    <span>100+</span>
-                    <span>Trusting Organizations</span>
-                </div>
-                <div class="client-data-content">
-                    <span>1,2k</span>
-                    <span>Clients Served</span>
-                </div>
-                <div class="client-data-content">
-                    <span>3</span>
-                    <span>Times Great Place to work</span>
-                </div>
+          <div class="client-data">
+            <div class="client-data-content">
+              <span>12+</span>
+              <span>Years of Experience</span>
             </div>
+            <div class="client-data-content">
+              <span>100+</span>
+              <span>Trusting Organizations</span>
+            </div>
+            <div class="client-data-content">
+              <span>1,2k</span>
+              <span>Clients Served</span>
+            </div>
+            <div class="client-data-content">
+              <span>3</span>
+              <span>Times Great Place to work</span>
+            </div>
+          </div>
         </div>
-        </div>
-
+      </div>
     </section>
 
     {{!-- OFFER --}}
     <section class="offer-container">
-        <div class="parent-container-offer-section">
-            <div class="offer-section">
-
-                <div class="offer-content-upper">
-                    <div>
-                        <span>We offer several</span>
-                        <span>Services for you</span>
-                    </div>
-                    <p>
-                        When you come to bounce with your needs, we provide you with a set of skilled developers who will help you achieve your goals through solutions, best developed according to the market needs
-                    </p>
-                </div>
-
-                <div class="offers">
-                    <div class="offer-content offer-im offer-img">
-                        <span class="offers-heading">Visual Identity</span>
-                        <p class="offers-para">We provide visibility to your product so that it can be seen among hundreds of the simmilar kind. We give it a differentiating factor</p>
-                    </div>
-                    <div class="offer-content">
-
-                        <span> Website design</span>
-                        <p>We provide best in class website development services and ensure high customer conversion rate. Customers report their CTR increase by 5% on average </p>
-                    </div>
-                    <div class="offer-content">
-                        <span>Mobile app development</span>
-                        <p>We have proven mobile development experience of 8 years and 100+ satisfied customers. With our offices spread accross 7 countries, we cater to may customer types based on their geography</p>
-                    </div>
-                </div>
-
+      <div class="parent-container-offer-section">
+        <div class="offer-section">
+          <div class="offer-content-upper">
+            <div>
+              <span>We offer several</span>
+              <span>Services for you</span>
             </div>
+            <p>
+              When you come to bounce with your needs, we provide you with a set
+              of skilled developers who will help you achieve your goals through
+              solutions, best developed according to the market needs
+            </p>
+          </div>
+
+          <div class="offers">
+            <div class="offer-content offer-im offer-img">
+              <span class="offers-heading">Visual Identity</span>
+              <p class="offers-para">
+                We provide visibility to your product so that it can be seen
+                among hundreds of the simmilar kind. We give it a
+                differentiating factor
+              </p>
+            </div>
+            <div class="offer-content">
+              <span> Website design</span>
+              <p>
+                We provide best in class website development services and ensure
+                high customer conversion rate. Customers report their CTR
+                increase by 5% on average
+              </p>
+            </div>
+            <div class="offer-content">
+              <span>Mobile app development</span>
+              <p>
+                We have proven mobile development experience of 8 years and 100+
+                satisfied customers. With our offices spread accross 7
+                countries, we cater to may customer types based on their
+                geography
+              </p>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     {{!-- BEST WORK SECTION --}}
     <section class="best-work-container">
-        <div class="parent-container-best-work-section">
-            <div class="work-section">
-
-                {{!-- 1 --}}
-                <div class="work-content-upper">
-                    <div>
-                        <span>SEE OUR BEST</span>
-                        <span>WORK HERE</span>
-                    </div>
-                    <div>
-                        <p>At Bounce Agency we are passionate bout customer experience and team culture. When you choose us, you are joining a team that genuinely loves what they do.</p>
-                        <div class="work-btn-container">
-                            <button><a>Visit Github</a></button>
-                            <button><a href="https://www.linkedin.com/in/aman-verma-82b823185/">Linkedin</a></button>
-                        </div>
-                    </div>
-                    
-                </div>
-
-                {{!-- 2 --}}
-                <div class="container-mid">
-                    {{!-- give this one background --}}
-                    <div class="work-content-image"></div>
-                    <div>
-                        {{!-- Give them equal baclgrounds --}}
-                        <span>BNKTJA</span>
-                        <p>Digital Agency</p>
-                        <p>EMoon Agency is a dynamic powerhouse in the digital realm, offering top-tier digital services to customers in over 6 countries. A global leader in the Digital Marketing marketplace asdjkkasjkjd asjd kas kasdjdsakdj kasd kjasd ak</p>
-                        <p>2022</p>
-                        <button ><a href="https://dribbble.com/shots/19365923-Das-Gr-ne-Creative-Design-Agency-Landing-Page-Website">View Project</a></button>
-                    </div>
-                </div>
-                {{!-- 3 --}}
-                <div class="container-mid-rev">
-                    <div>
-                        {{!-- Give them equal baclgrounds --}}
-                        <span>EMOON</span>
-                        <p>Digital Agency</p>
-                        <p>Moon Agency is a dynamic powerhouse in the digital realm, offering top-tier digital services. t</p>
-                        <p>Website Design Development</p>
-                        <p>2022</p>
-                        <button><a href="https://dribbble.com/shots/20384307-Tive-Creative-Digital-Agency-Landing-Page">Leave Feedback</a></button>
-                    </div>
-                    {{!-- give this one background --}}
-                    <div class="work-content-image work-content-image-2"></div>
-                </div>
+      <div class="parent-container-best-work-section">
+        <div class="work-section">
+          {{!-- 1 --}}
+          <div class="work-content-upper">
+            <div>
+              <span>SEE OUR BEST</span>
+              <span>WORK HERE</span>
             </div>
+            <div>
+              <p>
+                At Bounce Agency we are passionate bout customer experience and
+                team culture. When you choose us, you are joining a team that
+                genuinely loves what they do.
+              </p>
+              <div class="work-btn-container">
+                <button><a>Visit Github</a></button>
+                <button>
+                  <a href="https://www.linkedin.com/in/aman-verma-82b823185/"
+                    >Linkedin</a
+                  >
+                </button>
+              </div>
+            </div>
+          </div>
+
+          {{!-- 2 --}}
+          <div class="container-mid">
+            {{!-- give this one background --}}
+            <div class="work-content-image"></div>
+            <div>
+              {{!-- Give them equal baclgrounds --}}
+              <span>BNKTJA</span>
+              <p>Digital Agency</p>
+              <p>
+                EMoon Agency is a dynamic powerhouse in the digital realm,
+                offering top-tier digital services to customers in over 6
+                countries. A global leader in the Digital Marketing marketplace
+                asdjkkasjkjd asjd kas kasdjdsakdj kasd kjasd ak
+              </p>
+              <p>2022</p>
+              <button>
+                <a
+                  href="https://dribbble.com/shots/19365923-Das-Gr-ne-Creative-Design-Agency-Landing-Page-Website"
+                  >View Project</a
+                >
+              </button>
+            </div>
+          </div>
+          {{!-- 3 --}}
+          <div class="container-mid-rev">
+            <div>
+              {{!-- Give them equal baclgrounds --}}
+              <span>EMOON</span>
+              <p>Digital Agency</p>
+              <p>
+                Moon Agency is a dynamic powerhouse in the digital realm,
+                offering top-tier digital services. t
+              </p>
+              <p>Website Design Development</p>
+              <p>2022</p>
+              <button>
+                <a
+                  href="https://dribbble.com/shots/20384307-Tive-Creative-Digital-Agency-Landing-Page"
+                  >Leave Feedback</a
+                >
+              </button>
+            </div>
+            {{!-- give this one background --}}
+            <div class="work-content-image work-content-image-2"></div>
+          </div>
         </div>
+      </div>
     </section>
 
     {{!-- HAVE ANY IDEAS SECTION --}}
     <section class="ideas-container">
-        <div class="parent-container-ideas-section">
-            <div class="ideas-section">
-
-                {{!-- 1 --}}
-                <div class="ideas-container-upper">
-                    <div class="content-left">
-                        <div>
-                            <span>Have any ideas?</span>
-                            <span>Let us know!</span>
-                        </div>
-                        <p>At Bounce we are passionate about customer experience and team culture. When you choose Bounce Agency you are joining a team that genuinely loves what they do </p>
-                        <div class="ideas-button-container">
-                            <button><a href="/contact-us">Contact me</a></button>
-                            <button><a href="https://www.linkedin.com/in/aman-verma-82b823185/">LinkedIn</a></button>
-                        </div>
-                    </div>
-                    {{!-- IMAGE RIGHT --}}
-                    <div class="ideas-container-image">
-                    </div>
-                </div>
-
-                {{!-- 2 --}}
-                
-                {{>footer}}
-                
+      <div class="parent-container-ideas-section">
+        <div class="ideas-section">
+          {{!-- 1 --}}
+          <div class="ideas-container-upper">
+            <div class="content-left">
+              <div>
+                <span>Have any ideas?</span>
+                <span>Let us know!</span>
+              </div>
+              <p>
+                At Bounce we are passionate about customer experience and team
+                culture. When you choose Bounce Agency you are joining a team
+                that genuinely loves what they do
+              </p>
+              <div class="ideas-button-container">
+                <button><a href="/contact-us">Contact me</a></button>
+                <button>
+                  <a href="https://www.linkedin.com/in/aman-verma-82b823185/"
+                    >LinkedIn</a
+                  >
+                </button>
+              </div>
             </div>
-        </div>
+            {{!-- IMAGE RIGHT --}}
+            <div class="ideas-container-image"></div>
+          </div>
 
+          {{!-- 2 --}} {{>footer}}
+        </div>
+      </div>
     </section>
 
-    <!--?xml version="1.0" standalone="no"?-->              
-    
-</body>
+    <!--?xml version="1.0" standalone="no"?-->
+  </body>
 </html>

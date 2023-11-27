@@ -1,0 +1,16 @@
+body {
+  background: #fff;
+  height: 100%;
+}
+.contact-container {
+  height: 100vh;
+}
+
+.parent-container-contact-section {
+  width: 80vw;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

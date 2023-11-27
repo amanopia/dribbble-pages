@@ -1,16 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     {{!-- STYLES --}}
-    <link rel="stylesheet" href="./css/root-styles.css"/>
-    
+    <link rel="stylesheet" href="./css/root-styles.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/contact-us.css" />
+    <link rel="stylesheet" href="./css/about.css" />
+
+
+    {{!-- JAVASCRIPT --}}
+    <script defer src="./js/about.js"></script>
     <title>Document</title>
-</head>
-<body>
-    {{>header}}
-    <h1>Contact us page</h1>
-</body>
+  </head>
+  <body>
+    <div class="contact-container">
+      <div class="parent-container-contact-section">
+        <div class="header-black">
+          <div class="hidden-container"></div>
+          {{>header}}
+        </div>
+        <div class="contact-page-content">
+          <div class="hero-title">
+            <h1>Contact our friendly team</h1>
+            <p>Let us know how we can help</p>
+          </div>
+
+          {{!-- CARDS --}}
+          <div class="cards">
+            {{!-- CARD 1 --}}
+            <div class="card-1">
+              <div class="card-image">
+                <img />
+              </div>
+
+              <div class="card-content-lower">
+                <h3>Chat to sales</h3>
+                <p>Speak to out friendly team</p>
+                <a href="">sales@bounce.com</a>
+              </div>
+            </div>
+            {{!-- CARD 2 --}}
+            <div class="card-2">
+              <div class="card-image">
+                <img />
+              </div>
+
+              <div class="card-content-lower">
+                <h3>Chat to support</h3>
+                <p>We're here to help</p>
+                <a href="">support@bounce.com</a>
+              </div>
+            </div>
+            {{!-- CARD 3 --}}
+            <div class="card-3">
+              <div class="card-image">
+                <img />
+              </div>
+
+              <div class="card-content-lower">
+                <h3>Visit us</h3>
+                <p>Visit our office HQ</p>
+                <a href="">View on Google Maps</a>
+              </div>
+            </div>
+            {{!-- CARD 4 --}}
+            <div class="card-4">
+              <div class="card-image">
+                <img />
+              </div>
+
+              <div class="card-content-lower">
+                <h3>Call us</h3>
+                <p>Mon-Fri from 8 a.m. to 10 p.m. </p>
+                <a href="">+919213456789</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-section">
+            <h2>Frequently Asked Questions</h2>
+
+            {{!-- FAQ Card 1 --}}
+            
+            {{!-- FAQ Card 1 --}}
+            {{!-- FAQ Card 1 --}}
+            {{!-- FAQ Card 1 --}}
+            {{!-- FAQ Card 1 --}}
+            {{!-- FAQ Card 1 --}}
+            {{!-- FAQ Card 1 --}}
+            {{!-- FAQ Card 1 --}}
+            
+          </div>
+        </div>
+        <div class="footer-container">{{>footer}}</div>
+      </div>
+    </div>
+  </body>
 </html>
